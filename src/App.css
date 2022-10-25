@@ -1,0 +1,28 @@
+.getMovies-btn {
+  width: 500px;
+  background-color: rgb(209, 174, 127);
+  padding: 20px;
+  border-radius: 30px;
+  margin-left: 600px;
+}
+
+button {
+  margin-left: 200px;
+  border-radius: 15px;
+  background-color: blueviolet;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+}
+button:hover {
+  background-color: rgb(68, 39, 92);
+}
+
+.movies {
+  background-color: antiquewhite;
+  font: inherit;
+  width: 550px;
+  border-radius: 30px;
+  margin-left: 600px;
+}
