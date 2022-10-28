@@ -1,4 +1,6 @@
 import React, { Fragment, useState } from 'react';
+import Card from '../UI/Card.js';
+import './AddMovie.css';
 
 const AddMovie = (props) => {
   const [title, setTitle] = useState('');
@@ -32,23 +34,25 @@ const AddMovie = (props) => {
 
   console.log('ADdMOvie in ');
   return (
-    <Fragment>
-      <div>
-        <label>Movie Title </label>
-        <input type="text" onChange={onTitleChangeHandler} />
-      </div>
-      <div>
-        <label>Description </label>
-        <input type="text" onChange={onDescChangeHandler} />
-      </div>
-      <div>
-        <label>Id </label>
-        <input type="text" onChange={onIdChangeHandler} />
-      </div>
-      <div>
-        <button onClick={onDataSubmitHandler}>Add Movie</button>
-      </div>
-    </Fragment>
+    <Card>
+      <Fragment>
+        <div className="title">
+          <label>Movie Title </label>
+          <input type="text" onChange={onTitleChangeHandler} />
+        </div>
+        <div className="desc">
+          <label>Description </label>
+          <input type="text" onChange={onDescChangeHandler} />
+        </div>
+        <div className="id">
+          <label>Id </label>
+          <input type="text" onChange={onIdChangeHandler} />
+        </div>
+        <div>
+          <button onClick={onDataSubmitHandler}>Add Movie</button>
+        </div>
+      </Fragment>
+    </Card>
   );
 };
 
