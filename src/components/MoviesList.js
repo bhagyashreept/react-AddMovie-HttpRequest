@@ -6,6 +6,7 @@ const MoviesList = (props) => {
     <Fragment>
       {props.movies.map((movie) => (
         <Movie
+          key={movie.id}
           id={movie.id}
           title={movie.title}
           openingCrawl={movie.openingCrawl}
